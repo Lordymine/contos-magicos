@@ -1,0 +1,173 @@
+@import "tailwindcss";
+
+@theme {
+  /* ============================================
+     CONTOS MÁGICOS - DESIGN SYSTEM
+     Floresta encantada + Pergaminho mágico
+     ============================================ */
+  
+  /* Cores principais */
+  --color-background: #FDF8F3;
+  --color-foreground: #2C2416;
+  
+  /* Superfícies */
+  --color-surface-0: #FDF8F3;
+  --color-surface-1: #F5EDE4;
+  --color-surface-2: #EDE4D8;
+  --color-surface-3: #E8DFD4;
+  
+  /* Texto */
+  --color-text-primary: #2C2416;
+  --color-text-secondary: #5C4D3A;
+  --color-text-tertiary: #8B7D6B;
+  --color-text-muted: #A89B8C;
+  
+  /* Primário - Verde Floresta */
+  --color-primary: #2D5A4A;
+  --color-primary-hover: #1E3D32;
+  --color-primary-foreground: #FDF8F3;
+  --color-primary-soft: #E8F3EF;
+  
+  /* Secundário - Dourado */
+  --color-secondary: #C9A227;
+  --color-secondary-hover: #A8841D;
+  --color-secondary-foreground: #2C2416;
+  --color-secondary-soft: #FDF6E3;
+  
+  /* Accent */
+  --color-accent: #E8F3EF;
+  --color-accent-foreground: #2C2416;
+  
+  /* Bordas */
+  --color-border: #E8DFD4;
+  --color-border-subtle: #F0E8DE;
+  --color-border-strong: #D4C9BC;
+  --color-input: #D4C9BC;
+  --color-ring: #2D5A4A;
+  
+  /* Semânticas */
+  --color-success: #4A7C59;
+  --color-success-soft: #E8F3EB;
+  --color-warning: #B8860B;
+  --color-warning-soft: #FDF6E3;
+  --color-destructive: #A94442;
+  --color-destructive-soft: #FBE8E7;
+  
+  /* Componentes */
+  --color-card: #FDF8F3;
+  --color-card-foreground: #2C2416;
+  --color-popover: #FDF8F3;
+  --color-popover-foreground: #2C2416;
+  --color-muted: #F5EDE4;
+  --color-muted-foreground: #8B7D6B;
+  
+  /* Radius */
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+  --radius-2xl: 1.5rem;
+}
+
+/* ============================================
+   ESTILOS BASE
+   ============================================ */
+
+* {
+  border-color: var(--color-border);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-inter), system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+  line-height: 1.6;
+}
+
+/* Selection */
+::selection {
+  background-color: var(--color-primary-soft);
+  color: var(--color-primary);
+}
+
+/* Focus visible */
+:focus-visible {
+  outline: 2px solid var(--color-ring);
+  outline-offset: 2px;
+}
+
+/* ============================================
+   ANIMAÇÕES
+   ============================================ */
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.3s ease-out;
+}
+
+.animate-slide-up {
+  animation: slideUp 0.4s ease-out;
+}
+
+/* ============================================
+   SCROLLBAR
+   ============================================ */
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-surface-1);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-border-strong);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-text-muted);
+}
+
+/* ============================================
+   UTILITÁRIOS
+   ============================================ */
+
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.line-clamp-4 {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}

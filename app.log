@@ -1,0 +1,16 @@
+
+> contos-magicos@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://76.13.175.177:3000
+
+✓ Starting...
+✓ Ready in 457ms
+Error fetching user stories: Error: OPENROUTER_API_KEY not configured
+    at <unknown> (.next/server/chunks/[root-of-the-server]__2031147e._.js:16:1712)
+    at C (.next/server/chunks/[root-of-the-server]__2031147e._.js:16:1826)
+    at async l (.next/server/chunks/[root-of-the-server]__2031147e._.js:16:5158)
+    at async u (.next/server/chunks/[root-of-the-server]__2031147e._.js:16:6199)
+    at async Module.U (.next/server/chunks/[root-of-the-server]__2031147e._.js:16:7277)
