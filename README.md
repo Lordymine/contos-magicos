@@ -16,7 +16,7 @@
 
 ## 🛠️ Tecnologias
 
--   **Framework:** [Next.js 15](https://nextjs.org/) (App Router)
+-   **Framework:** [Next.js 16.1.6](https://nextjs.org/) (App Router)
 -   **Linguagem:** TypeScript
 -   **Estilização:** [Tailwind CSS v4](https://tailwindcss.com/)
 -   **Componentes:** Shadcn/ui (customizados)
